@@ -1,0 +1,9 @@
+---
+layout: post
+title: "hello"
+date: 2012-06-11 17:52
+comments: true
+categories: default
+---
+
+Hello world!
