@@ -1,0 +1,430 @@
+/*@font-face {
+  font-family: "Essays 1743";
+  src: url("/static/font/essays1743-min.eot");
+  src: local("Essays 1743"), url("/static/font/essays1743-min.ttf")
+}*/
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.clear {clear: both; }
+.alignleft {float: left; }
+.alignright {float: right; }
+
+.notice {
+  margin: 5px 30px;
+  padding: 5px;
+  background-color: #FBFBFB;
+  border: 1px solid #AAAAAA;
+  border-left: 10px solid #F28500;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+img {border: none; }
+a:link, a:visited, a:hover, a:active {
+  color: #3366CC;
+  text-decoration: none;
+  outline: none;
+}
+a.new-window {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC") no-repeat scroll right center transparent;
+  padding-right: 13px;
+}
+.entry a:link, .entry a:visited,
+.entry a:hover, .entry a:active {border-bottom: 1px dashed #CCCCCC; }
+.alignleft {float: left; }
+.alighright {float: right; }
+
+#page {
+  width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+#topnav {
+  background-color: #3366DD;
+  padding: 10px 0 0 60px;
+}
+
+#topnav ul, #topnav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+#topnav li {
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+}
+
+#topnav a:link, #topnav a:visited {
+  display: block;
+  padding: 5px 10px;
+  color: #EEEEEE;
+  outline: none;
+}
+
+#topnav a:hover, #topnav a:active {
+  background-color: #FFFFFF;
+  text-decoration: underline;
+  outline: none;
+}
+
+#topnav li.current a:link, #topnav li.current a:visited {
+  color: #777777;
+  background-color: #FFFFFF;
+}
+
+#topnav li.current a:hover, #topnav li.current a:active {
+  background-color: #FFFFFF;
+}
+
+#header {
+  padding: 0 5px 15px;
+  border-bottom: 5px solid #3366DD;
+  margin-bottom: 10px;
+}
+
+#header-title {
+  /*font-family: "Essays 1743";*/
+  margin: 5px 0;
+  font-size: 32px;
+}
+
+#header-description {
+  margin: 2px 0;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+}
+
+#content {
+  overflow: auto;
+}
+
+#footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+#footer a:link, #footer a:visited, #footer a:active, #footer a:focus {
+  color: #CCCCCC;
+}
+
+.home-narrow {
+  float: left;
+  width: 280px;
+  padding: 10px;
+}
+
+.home-wide {
+  float: right;
+  width: 680px;
+  padding: 10px;
+}
+
+.home-posts {
+  margin: 0 0 30px;
+  padding: 0 0 0 10px;
+  list-style: none;
+}
+
+.home-posts li {
+  margin: 0 0 5px;
+}
+
+.section-name {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.section-body {
+  padding-left: 10px;
+}
+
+.copyright-notice {
+  border-width: 1px;
+  border-style: solid none;
+  border-color: #DDDDDD;
+  font-size: 12px;
+  color: #AAAAAA;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.copyright-notice a:link, .copyright-notice a:visited {
+  color: #AAAAAA;
+}
+
+.copyright-notice a:hover, .copyright-notice a:active {
+  color: #888888;
+  text-decoration: underline;
+}
+
+.entry h3 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.comments {
+  clear: both;
+}
+
+.comment {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#comment-preview {
+  border: 2px dotted #CCCCCC;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.comment-body {
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #EFF4FF;
+}
+
+.comment-body p {
+  margin: 8px 0;
+}
+
+.comment-point-container {
+  position: relative;
+  height: 15px;
+}
+
+.comment-point {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: 30px solid #EFF4FF;
+  border-top: 15px solid #FFFFFF;
+  overflow: hidden;
+}
+
+input, textarea {
+  border: 1px solid #77A0EF;
+  background-color: #EFF4FF;
+  padding: 4px;
+}
+
+.input-dog, .input-ring {
+  width: 250px;
+}
+
+.input-dog {
+  margin-right: 10px;
+  background: #EFF4FF url(/static/img/bg-name.gif) no-repeat scroll right center;
+}
+
+.input-ring {
+  background: #EFF4FF url(/static/img/bg-email.gif) no-repeat scroll right center;
+}
+
+.input-poo {
+  color: #000000;
+}
+
+.comments textarea {
+  width: 520px;
+  height: 100px;
+}
+
+#comment-status {
+  color: red;
+}
+
+#google-site-search {
+  padding: 0 3px;
+}
+
+#google-site-search .gs-result .gs-title, #google-site-search .gs-result .gs-title * {
+  color: #3366CC;
+  font-size: 14px;
+}
+/*
+#google-site-search b, .search-notice b, #google-site-search .gs-result .gs-title b {
+  color: #CC0033;
+}*/
+
+#google-site-search .gsc-branding, #google-site-search .gsc-tabsArea, #google-site-search .gs-visibleUrl-short {
+  display: none;
+}
+
+#google-site-search .gs-result {
+  font-size: 12px;
+}
+
+.search-notice {
+  background-color: #FFF8DD;
+  padding: 10px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+pre code {
+  clear: both;
+  display: block;
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+  overflow: auto;
+}
+
+code {
+  font-family: monospace;
+  background-color: #FAFCFF;
+  border: 1px dashed #BAD4E8;
+}
+
+blockquote {
+  margin: 15px 30px 0 30px;
+  padding-left: 10px;
+  border-left: 5px solid #DDDDDD;
+  background-color: #F7F9FF;
+}
+
+h3.selected-title {
+  clear: both;
+}
+
+ul.selected-list, ul.selected_list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.selected-list {
+  overflow: auto;
+}
+
+ul.selected-list li {
+  float: left;
+  width: 300px;
+  margin: 2px 15px 3px 5px;
+}
+
+.wishcolumn {
+  float: left;
+  width: 300px;
+  padding: 15px;
+  border-left: 5px solid #A7A7A7;
+}
+
+.wishcolumn.leftmost {
+  border-left: none;
+}
+
+.wishcolumn h2 {
+  font-size: 16px;
+}
+
+.wishcolumn h4 {
+  font-size: 14px;
+}
+
+.wishcolumn p {
+  font-style: italic;
+}
+
+.pointer {
+  border: 1px solid #3366CC;
+  white-space: nowrap;
+}
+
+.note-container, .target-area, .box-main, .box-inner, .box-outer, .area-note {
+  display: block;
+  background: transparent;
+  position: absolute;
+}
+
+a.target-area:link, a.target-area:visited, a.target-area:hover, a.target-area:active {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.box-outer {
+  border: 1px solid #000000;
+  opacity: 0.2;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box-main {
+  border: 1px solid #FFFFFF;
+  opacity: 0.5;
+  left: 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+}
+
+.box-inner {
+  border: 1px solid #000000;
+  opacity: 0.1;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+
+.note-container:hover .box-outer {
+  opacity: 0.4;
+}
+
+.note-container:hover .box-main {
+  opacity: 1;
+}
+
+.note-container:hover .box-inner {
+  opacity: 0.2;
+}
+
+.area-note {
+  width: 200px;
+  top: 100%;
+  padding-top: 5px;
+  bottom: auto;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.note-price {
+  color: red;
+}
+
+.target-area:hover .area-note {
+  visibility: visible;
+  z-index: 100;
+}
+
+.note-content {
+  float: left;
+  background-color: #FFFFD3;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  padding: 3px 5px;
+}
